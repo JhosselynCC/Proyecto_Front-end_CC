@@ -575,3 +575,240 @@ and (min-width: 481px) and (max-width: 960px){
     }
 
 }
+
+.mainsales{
+    background-color: var(--secondary);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr  1fr;
+  
+}
+
+
+.header{
+    grid-row: 1;
+    background-color: var(--primary);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    
+}
+
+
+.contendheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: inherit wrap;     
+    margin-left: 6rem;
+    margin-right: 6rem; 
+    
+      
+}
+
+
+.logheader{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+nav picture {
+ width: 100px;
+}
+
+nav p{
+color: var(--secondary);
+font-size: var(--font8);
+width: 6rem;
+}
+
+li{
+    
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-flow: inherit wrap;  
+}
+
+li>a{
+    text-decoration: none;
+    color: var(--pages);
+    font-size: var(--font0);
+    text-align: center;
+    flex-grow: 1;
+   
+}
+
+li>a:last-child{
+    color: var(--green)
+}
+li>a:hover{
+    color: gray;
+    font-size: var(--Font2);
+}
+
+
+li>a:last-child:hover{
+    color: greenyellow;
+    font-size: var(--Font2);
+}  
+
+.contenido{
+    grid-row: 2;
+    padding: 0%;
+    display: Flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--secondary);
+    height: 100%;
+}
+.discounts{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+}
+
+.dis-card{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    border-style:solid ;
+    border-width: thin;
+    text-align: center;
+    padding: 3%;
+    gap: 15px;
+    width: 170px;
+    
+}
+.dis-card>h1{
+    font-weight: normal;
+    
+}
+.p1{
+    font-size: var(--Font4);
+    
+}
+.p2{
+    font-size: var(--font7);
+    color: gray;
+}
+
+.BOX4BUY{
+    
+    padding: 1%;
+    display: Flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: stretch;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--secondary);
+    height: 100%;
+}
+
+.BOX4TEX1BUY{
+    font-size: var(--font4);
+    text-align: center;
+}
+.BOX4TEX2BUY{
+    font-size: var(--font0);
+    text-align: center;
+}
+/*
+.BOX4TEX3BUY{
+    font-size: var(--font9);
+}
+*/
+.formsBUY{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.form1BUY{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: row;
+    
+}
+.labelBUY{
+    display: flex;
+    flex-direction: row;
+    width: 515px;
+    justify-content: flex-start;
+    gap:41%; 
+    font-size: 0.78rem;
+}
+    
+.BOX4-INPUTBUY{
+    padding: 1px;
+    border-color: #72767c; 
+    
+    
+    
+}
+
+
+.BOTONBOX4BUY{
+
+    padding: 5px;
+    background-color: var(--green);
+    border-style: solid;
+    border-color: var(--green);
+    color: var(--secondary);
+    font-size: var(--font9);
+    font-weight: bold;
+}
+
+.BOTONBOX4BUY:hover{
+    background-color:greenyellow;
+    color:gray;
+
+}
+
+
+
+
+
+
+
+
+.footerBUY{
+    grid-row: 3;
+    background-color: var(--footer);
+    padding: 1% 1%;
+
+}
+
+.navfooterBUY{
+    display: flex;
+    gap: 6%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16rem;
+    margin-right: 16rem;
+  
+    
+    
+}
+.navfooterBUY>a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: var(--font0);
+    text-align: justify;
+     flex-wrap: wrap;  
+}
+.navfooterBUY>a:hover{
+    text-decoration: underline;
+    
+}
