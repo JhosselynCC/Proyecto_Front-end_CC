@@ -495,7 +495,7 @@ li>a:last-child:hover{
 
 @media only screen 
 and (min-width: 0px) and (max-width: 480px){
-    :root {
+  /*  :root {
 
         --primary: #89caa3;
         --secondary: #352929;
@@ -522,7 +522,7 @@ and (min-width: 0px) and (max-width: 480px){
         --font9:0.72rem;
         --font10:0.6rem;
        
-    }
+    }*/
 
     .contendheader{
         display: flex;
@@ -540,7 +540,7 @@ and (min-width: 0px) and (max-width: 480px){
 
 @media only screen 
 and (min-width: 481px) and (max-width: 960px){
-    :root {
+   /* :root {
 
         --primary: #72767c;
         --secondary: #e04f4f;
@@ -566,7 +566,7 @@ and (min-width: 481px) and (max-width: 960px){
         --font9:0.72rem;
         --font10:0.6rem;
        
-    }
+    }*/
 
 
     .contendheader{
@@ -740,6 +740,8 @@ li>a:last-child:hover{
     flex-direction: row;
     
 }
+
+/*
 .labelBUY{
     display: flex;
     flex-direction: row;
@@ -747,7 +749,7 @@ li>a:last-child:hover{
     justify-content: flex-start;
     gap:41%; 
     font-size: 0.78rem;
-}
+}*/
     
 .BOX4-INPUTBUY{
     padding: 1px;
@@ -775,9 +777,20 @@ li>a:last-child:hover{
 
 }
 
+.select{
+    padding: 0.2rem 10rem 0.2rem 0.2rem
+}
 
+.select>p{
+    font-size: var(--font9);
+}
+.resu{
+    display: inline-block;
+    background-color: rgb(202, 243, 229);
+    padding: 0.5rem;
+    margin: 0.8rem;
 
-
+}
 
 
 

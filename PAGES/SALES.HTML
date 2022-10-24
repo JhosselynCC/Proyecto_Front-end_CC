@@ -38,24 +38,24 @@
 
     <section class="contenido">
         <section class="discounts">
-            <article class="dis-card">
-                <h4> Estudiante </h4>
+            <article class="dis-card" id="items">
+                <h4 class="name"> Estudiante </h4>
                 <p class="p1">Tienen un descuento</p>
-                <h5>80%</h5>
+                <h5 class="descuento">80%</h5>
                 <p class="p2">*Presentar documentacion</p>
     
             </article>
-            <article class="dis-card">
-                <h4> Trainee </h4>
+            <article class="dis-card" id="items">
+                <h4 class="name"> Trainee </h4>
                 <p class="p1">Tienen un descuento</p>
-                <h5>50%</h5>
+                <h5 class="descuento">50%</h5>
                 <p class="p2">*Presentar documentacion</p>
     
             </article>
-            <article class="dis-card">
-                <h4> Junior </h4>
+            <article class="dis-card" id="items">
+                <h4 class="name"> Junior </h4>
                 <p class="p1">Tienen un descuento</p>
-                <h5>15%</h5>
+                <h5 class="descuento">15%</h5>
                 <p class="p2">*Presentar documentacion</p>
     
             </article>
@@ -64,58 +64,68 @@
     
         <section class="BOXBUY" >
     
-           <div class="BOX4TEX1BUY">
+            <div class="BOX4TEX1BUY">
                 <P>Venta</P>
             </div>
+
             <div class="BOX4TEX2BUY">
-                <h2>VALOR DE TICKET $200</h2>
+                <h2 class="value">VALOR DE TICKET $200</h2>
             </div>
 
     
-            <div class="formsBUY">
+                <form class="formsBUY" id="Form" >
+
+                
     
                   <div class="form1BUY">
                       <div class="BOX4-INPUTBUY">
-                         <input type="text" placeholder="Nombre"  id="Firts name" style="width: 255px;">
+                         <input type="text" placeholder="Nombre"  id="firtsname" style="width: 255px;" required>
                        </div>
 
                       <div class="BOX4-INPUTBUY">
-                         <input type="text" placeholder="Apellido" id="Last name" style="width: 255px;">      
+                         <input type="text" placeholder="Apellido" id="lastname" style="width: 255px;" required>      
                         </div>
                    </div>
 
                     <div class="BOX4-INPUTBUY">
-                        <input type="text" placeholder="Correo" id="email" style="width: 515px;">      
+                        <input type="text" placeholder="Correo" id="email" style="width: 515px;" required>      
                     </div>
-                  
-
-                  <div class="labelBUY">
-                    <p>Cantidad</p>
-                    <p>Categoria</p>
-                  </div>
+            
 
                   <div class="form1BUY">
                       <div class="BOX4-INPUTBUY">
-                         <input type="text" placeholder="Cantidad"  id=" " style="width: 255px;">
+                         <p>Cantidad</p>
+                         <input type="number" placeholder="Cantidad"  id="cantidad" style="width: 255px;" required>
                        </div>
 
-                       <div class="BOX4-INPUTBUY">
-                          <input type="text" placeholder="Estudiante" id=" " style="width: 255px;">      
+                       <div class="BOX4-select"> 
+                           <p>Categoria</p>
+                          
+                            <select id="categoria" class="select">
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Trainee">Trainee</option>
+                            <option value="Junior">Junior</option>
+                          </select> 
                         </div>
-                 </div>
-
+                  </div>
+                 
                  <div class="BOX4-INPUT6BUY">
-                        <input type="text" placeholder="Total a pagar:$" id=" " style="width: 515px;">      
+                        <input class="resu" type="text" placeholder="Total a pagar:$" id="Resultado" style="width: 515px;" disabled="TRUE">      
                   </div>
+                
+            
+                
+                </form>
 
+
+               <div>
                   <div>
-                      <button onClick="alert('¡Su Registro fue eviado!')" class="BOTONBOX4BUY"  style="width: 255px;">Borrar</button>
-                      <button onClick="alert('¡Su Registro fue eviado!')" class="BOTONBOX4BUY"  style="width: 255px;">Resumen</button>
+                      <button onclick="Borrar()" class="BOTONBOX4BUY"  style="width: 255px;">Borrar</button>
+                      <button onClick='calculo()' class="BOTONBOX4BUY"  style="width: 255px;">Resumen</button>
                   </div>
-               </div> 
+                </div>
 
 
-            </div>
 
         </section>
     
@@ -136,7 +146,7 @@
         </nav>
 
     </footer>
-    
-    <script src="../main.js"></script>
+
+    <script src="./main.js"></script>
 </body>
 </html>
